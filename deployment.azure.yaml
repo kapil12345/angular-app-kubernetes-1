@@ -14,7 +14,7 @@ spec:
     spec: 
       containers: 
       - name: angular 
-        image: kapil12345/angular-app-kubernetes-1:#{Build.BuildId}#
+        image: javaacr01.azurecr.io/kapil12345/angular-app-kubernetes-1:$(Build.BuildId)
         #image: kapilbansal161/angular-app:#{Build.BuildId}#- Docker Hub
         ports: 
         - containerPort: 80 
