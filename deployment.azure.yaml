@@ -15,7 +15,6 @@ spec:
       containers: 
       - name: angular 
         image: javaacr01.azurecr.io/angular-app:latest
-        #image: kapilbansal161/angular-app:#{Build.BuildId}#- Docker Hub
         ports: 
         - containerPort: 80 
 --- 
