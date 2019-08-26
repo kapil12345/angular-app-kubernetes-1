@@ -1,6 +1,7 @@
 apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2 
 kind: Deployment 
 metadata: 
+  namespace: amit
   name: angular-deployment 
 spec: 
   selector: 
@@ -21,7 +22,8 @@ spec:
 #https://kubernetes.io/docs/concepts/services-networking/service/#defining-a-service  
 kind: Service 
 apiVersion: v1 
-metadata: 
+metadata:
+  namespace: amit
   name: angular-service 
 spec: 
   selector: 
