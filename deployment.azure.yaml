@@ -1,7 +1,7 @@
 apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2 
 kind: Deployment 
 metadata: 
-  namespace: amit
+  namespace: amit1
   name: angular-deployment 
 spec: 
   selector: 
@@ -15,7 +15,7 @@ spec:
     spec: 
       containers: 
       - name: angular 
-        image: kapilbansal161/angular-app:amit
+        image: kapilbansal161/angular-app:amit1
         ports: 
         - containerPort: 80 
 --- 
@@ -23,7 +23,7 @@ spec:
 kind: Service 
 apiVersion: v1 
 metadata:
-  namespace: amit
+  namespace: amit1
   name: angular-service 
 spec: 
   selector: 
