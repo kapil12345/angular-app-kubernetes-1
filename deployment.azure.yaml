@@ -1,8 +1,8 @@
 apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2 
 kind: Deployment 
 metadata: 
-  namespace: amit1
-  name: angular-deployment 
+  name: angular-deployment
+  namespace: kapil
 spec: 
   selector: 
     matchLabels: 
@@ -15,7 +15,7 @@ spec:
     spec: 
       containers: 
       - name: angular 
-        image: kapilbansal161/angular-app:amit1
+        image: angularhclacr.azurecr.io/angular-app:latest
         ports: 
         - containerPort: 80 
 --- 
