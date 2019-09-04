@@ -23,7 +23,7 @@ spec:
 kind: Service 
 apiVersion: v1 
 metadata:
-  namespace: amit1
+  namespace: kapil
   name: angular-service 
 spec: 
   selector: 
